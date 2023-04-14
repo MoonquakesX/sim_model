@@ -1,0 +1,9 @@
+<launch>
+    <arg name="map" default="nav.yaml" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find urdf_gazebo)/map/$(arg map)"/>
+    <include file="$(find urdf_gazebo)/launch/my_amcl.launch" />
+
+    <include file="$(find urdf_gazebo)/launch/my_movebase.launch" />
+    <node pkg="rviz" type="rviz" name="rviz"/>
+
+</launch>
