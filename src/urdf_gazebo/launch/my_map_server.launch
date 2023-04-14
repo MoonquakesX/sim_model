@@ -1,0 +1,7 @@
+<launch>
+
+    <arg name="map" default="nav.yaml" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find urdf_gazebo)/map/$(arg map)"/>
+</launch>
+
+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

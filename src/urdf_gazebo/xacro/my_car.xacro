@@ -1,0 +1,11 @@
+<robot name="my_car_camera" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="inertial_matrix.xacro" />
+    <xacro:include filename="my_base.xacro" />
+    <xacro:include filename="my_camera.xacro"/>
+    <xacro:include filename="my_laser.xacro" />
+    <xacro:include filename="move.xacro" />
+    <xacro:include filename="mySensor_laser.xacro"/>
+    <!-- <xacro:include filename="mySensor_camera.xacro"/> -->
+    <xacro:include filename="mySensor_kinect.xacro"/>
+</robot>
+
