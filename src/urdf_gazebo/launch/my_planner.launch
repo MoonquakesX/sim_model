@@ -4,6 +4,5 @@
     <include file="$(find urdf_gazebo)/launch/my_amcl.launch" />
 
     <include file="$(find urdf_gazebo)/launch/my_movebase.launch" />
-    <node pkg="rviz" type="rviz" name="rviz"/>
-
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf_gazebo)/rviz/move_base.rviz"/>
 </launch>
